@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import UIKit
 /// Protocol for specifying request properties 
 protocol NinjaRequestable {
     /// Endpoint of the URL
@@ -20,7 +20,7 @@ protocol NinjaRequestable {
     /// Body to be sent in the request
     var body: [String: Any]? { get }
     /// Body for multipart request
-    var multipartParams : [String:Any]?{get}
+//    var multipartParams : [String:Any]?{get}
     /// Request Headers such as lang , authorization , .. etc
     var headers: [String: String]? { get }
 }
@@ -33,7 +33,7 @@ extension NinjaRequestable {
         request.httpMethod = method.rawValue
         request.allHTTPHeaderFields = headers
         
-        if let body_ = body , multipartParams == nil {
+        if let body_ = body , !body_.values.contains(where: {($0 is UIImage)}){
             do {
                 request.httpBody = try JSONSerialization.data(withJSONObject: body_, options: [])
             } catch {

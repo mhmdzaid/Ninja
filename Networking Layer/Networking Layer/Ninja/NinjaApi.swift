@@ -6,8 +6,8 @@
 //
 
 import Foundation
-/// Custom created NinjaRequestable  , create urs 
-enum NinjaRequest: NinjaRequestable , NinjaHandler , NinjaMultipartHandler{
+/// Custom created NinjaRequestable  , create yours
+enum NinjaApi: NinjaRequestable , NinjaHandler , NinjaMultipartHandler{
     case country
     case profile([String:Any])
     var path: String{
@@ -20,7 +20,7 @@ enum NinjaRequest: NinjaRequestable , NinjaHandler , NinjaMultipartHandler{
     }
     
     var mainPath: String{
-        return "https://www.servantskw.com/api/"
+        return ""
     }
     
     var method: HttpMethod{
@@ -34,23 +34,18 @@ enum NinjaRequest: NinjaRequestable , NinjaHandler , NinjaMultipartHandler{
     
     var body: [String : Any]?{
         switch self{
-
+        case .profile(let params):
+            return params
         default:
             return nil
         }
     }
     
-    var multipartParams: [String : Any]?{
-        switch self{
-        case .profile(let params):
-            return params
-        default :
-            return nil
-        }
-        return nil 
-    }
+  
     var headers: [String : String]?{
-        return nil
+        return [
+                "Platform":"ios",
+                "Auth":"$2y$10$0HkTz09Oaj1Cyoy0F15vfeiPAf6LUhhOHpGEFBA0PEZBsGDj1WBVy"]
     }
     
     

@@ -13,7 +13,7 @@
 		19305EC825FA59AC0050BBB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19305EC625FA59AC0050BBB1 /* Main.storyboard */; };
 		19305ECA25FA59B00050BBB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19305EC925FA59B00050BBB1 /* Assets.xcassets */; };
 		19305ECD25FA59B00050BBB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19305ECB25FA59B00050BBB1 /* LaunchScreen.storyboard */; };
-		19305ED825FA59F60050BBB1 /* NinjaRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19305ED725FA59F60050BBB1 /* NinjaRequest.swift */; };
+		19305ED825FA59F60050BBB1 /* NinjaApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19305ED725FA59F60050BBB1 /* NinjaApi.swift */; };
 		19305EDB25FA605A0050BBB1 /* NinjaRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19305EDA25FA605A0050BBB1 /* NinjaRequestable.swift */; };
 		19305EDE25FA614D0050BBB1 /* NinjaHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19305EDD25FA614D0050BBB1 /* NinjaHandler.swift */; };
 		19305EE125FA639A0050BBB1 /* NinjaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19305EE025FA639A0050BBB1 /* NinjaError.swift */; };
@@ -32,7 +32,7 @@
 		19305EC925FA59B00050BBB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19305ECC25FA59B00050BBB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19305ECE25FA59B00050BBB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19305ED725FA59F60050BBB1 /* NinjaRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaRequest.swift; sourceTree = "<group>"; };
+		19305ED725FA59F60050BBB1 /* NinjaApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaApi.swift; sourceTree = "<group>"; };
 		19305EDA25FA605A0050BBB1 /* NinjaRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaRequestable.swift; sourceTree = "<group>"; };
 		19305EDD25FA614D0050BBB1 /* NinjaHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaHandler.swift; sourceTree = "<group>"; };
 		19305EE025FA639A0050BBB1 /* NinjaError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaError.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		19305ED525FA59DE0050BBB1 /* Ninja */ = {
 			isa = PBXGroup;
 			children = (
-				19305ED725FA59F60050BBB1 /* NinjaRequest.swift */,
+				19305ED725FA59F60050BBB1 /* NinjaApi.swift */,
 				19305EDA25FA605A0050BBB1 /* NinjaRequestable.swift */,
 				19305EDD25FA614D0050BBB1 /* NinjaHandler.swift */,
 				19CCC2D125FA745B00B7A853 /* NinjaMultipartHandler.swift */,
@@ -175,7 +175,7 @@
 				19305EE425FA65B40050BBB1 /* NinjaParser.swift in Sources */,
 				19305EC525FA59AB0050BBB1 /* ViewController.swift in Sources */,
 				19305EC125FA59AB0050BBB1 /* AppDelegate.swift in Sources */,
-				19305ED825FA59F60050BBB1 /* NinjaRequest.swift in Sources */,
+				19305ED825FA59F60050BBB1 /* NinjaApi.swift in Sources */,
 				19305EDE25FA614D0050BBB1 /* NinjaHandler.swift in Sources */,
 				19CCC2D525FA7D5400B7A853 /* NinjaErrorHandler.swift in Sources */,
 				19305EDB25FA605A0050BBB1 /* NinjaRequestable.swift in Sources */,
